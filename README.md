@@ -1,23 +1,23 @@
 # Now we see how to run a program 
 ## steps to be follow
-### Step 1:
+### Step 1:innocent:
         - Once written a java program,we have to compile it.
             - ***javac classname.java***
 
-### Step 2:
+### Step 2:heart_on_fire:
         - After compilation succeed,we should generate header file from java class.
             - ***javah classname***
         
  > After executing javah,it will give us auto generated file.it is kind of interface like interaction between ***JAVA*** and ***C*** .
 
-### Step 3:
+### Step 3:point_down:
         - Write a C program with help of javah file
 
-### Step 4:
+### Step 4:thinking:
         - Once written a C program,we have to compile that but it will not compile again and again.so what can we do?
         
             ** the thing is there is one way to solve this**
-### Step 5:
+### Step 5:bulb:
         - Generate Shared Library File
  >  In order to do that,we need C compiler,I have choosen gcc compiler.
         - ***gcc -shared -shared-libgcc **call.c** -o lib[World].so -I /usr/lib/jvm/jdk-11.0.12/include/ -I /usr/lib/jvm/jdk-11.0.12/include/linux/***
@@ -26,7 +26,7 @@
         - **/usr/lib/jvm/jdk-11.0.12/include/**-> jdk directory  
         - **/usr/lib/jvm/jdk-11.0.12/include/linux/**->linux directory.
 
-### Step 6:
+### Step 6:beer:
         -  we are all set,now run java program to get the output as you expected.
 
 >Above step 5 shared memory used for we dont need to compile cfile again and again once executed we directly run java program.
